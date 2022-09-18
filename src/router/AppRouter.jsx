@@ -1,5 +1,7 @@
 import { Navigate, Routes, Route } from 'react-router-dom';
 
+import { Navbar } from '../ui';
+
 import { LoginPage } from '../auth/pages/LoginPage';
 import { DcPage } from '../heroes/pages/DcPage';
 import { MarvelPage } from '../heroes/pages/MarvelPage';
@@ -7,6 +9,7 @@ import { MarvelPage } from '../heroes/pages/MarvelPage';
 export const AppRouter = () => {
     return (
         <>
+            <Navbar />
             <Routes>
                 <Route path="marvel" element={ <MarvelPage /> } />
                 <Route path="dc" element={ <DcPage /> } />
