@@ -1,0 +1,1 @@
+import 'whatwg-fetch'; // <-- npm i -D whatwg-fetch
